@@ -1,0 +1,159 @@
+Features: For each feature you implement, move to the Implemented section and
+explain who did it (utorid) and how you did it. You can consider these as 
+almost user stories, if you just add a bit to them. Add more features/user stories at the bottom.
+Move them up when completed.
+
+------------------------------------------------------------------------------------
+Implemented: 
+------------------------------------------------------------------------------------
+0) Login
+   Done by: arnold
+   Explanation: created schema, including appuser table, populated with 
+   default user. Also created handler for login state as well as login page.
+
+04) Excellent use of MVC
+    Done by: Done together 
+    Explanation:  Making sure that the view only maintains structure of the front end and what the user uses. If something happened in the view, 
+                  the information is sent back to the model where the actions are performed and then sent back to controller.
+    
+06) Good schema
+    Done by: tovkyle
+    Explanation:  Maintaing databases that only hold relevent and useful information; try not to duplicate information.
+    
+07) Summary screen presents list of restaurants and their current ranking
+    Done by: Done together
+    Explanation:  This is the results page where the ELO ratings of all the restaurants are displayed.
+
+10) Good implementation of navigation in the controller.
+    Done by: Done together 
+    Explanation:  Broke down each of the views into their own cases and if at any time and event happens relating to the view,
+                  information is sent over to the control (and model where applicable).
+
+11) User profile has lots of interesting inputs
+    Done by: tovkyle
+    Explanation:  By default, the profile page displays the username, gender, birthday, and the number of times the user has voted (0 but default).
+                  The user has the chance to edit their information by clicking on the edit button which will redirect them to the edit page. When the 
+                  user edits their profile, they also have the chance to include a bio. After submitting their changes, users are redirected to the profile
+                  page that now displays the new changes. 
+                  
+14) Good use of HTML5 form fields for form validation.
+    Explanation: Using appropriate buttons and/or submit forms when trying to gather information,
+                  I.e. Logging in, new member, edit profile.
+                  
+16) Good use of sql
+    Done by: Done together
+    Explanation:  Used it to create databases and maintain information that needed to be accessed at a later point in time 
+                  (and not regarding a specfic user; I.e. the ELO rating for all the restaruants on the results page)
+
+17) Wins vs losses vs ties on results page
+    Done by: tovkyle
+    Explanation: On the results page, also display a tally of how many times a restaurant has won, lost, or tied.
+
+18) Navigation highlights which page they are on
+    Done by: Done together
+    Explanation: Only highlights links that it hovers over
+        
+20) Add in option for tie or I don't know instead of just one wins etc.
+    Done by: tovkyle
+    Explanation:  Have a button option where the user can write "I don't know" and when that is clicked the Compete.php
+                  will have values entered pertaining to a tie.
+
+21) Smarter choice of pairs, so for example, restaurants compete with closely rated other restaurants. (Is this better?)
+    Done by: tovkyle 
+    Explanation:  Chooses a resturant at random from the database, then query to find restaurants that are rated within a range of 50 of said restaurant
+                  (25 above and 25 below), within that query randomly select one. Then present both options to the user so that they can vote on them;
+                  along with the "I don't know" option.                      
+
+22) Good use of session
+    Done by: Done together 
+    Explanation:  Maintaing $_SESSION variables where applicable and making sure to set up at the beginning of the programs use 
+                  (When logging in) and destroying session (When logging out).
+
+25) Description: New Member (Registration) Page
+    Done by: nadeemf4
+    Explanation:  Created a sign-up page where new members can sign up. Asks them for their username and password,password confirmation along with gender and birthday.
+                  If user is creating an account with a username that already exits or input wrong password confirmation then display an error; or if any other fields
+                  are missing. Once user has made their account they are redirected to the login page where they can then proceed to login.
+
+26) Description: Added a "Change Password" option on the profile page.
+    Done by: Done together 
+    Explanation:  When click on "Change Password" option, users are redirected to a page where they are asked to enter their old password
+                  along with their new password and new password confirmation. If all criteria is met then the password for said user will be changed.
+------------------------------------------------------------------------------------
+Unimplemented:
+------------------------------------------------------------------------------------
+01) User never votes twice on the same pair
+    Done by: UTORID 
+    Explanation: 
+
+02) Page token: Reload button does not cause incorrect vote, that is reload presents
+   expired message and new page presented
+    Done by: UTORID 
+    Explanation: 
+
+03) Page token: Back button not allowed, that is old submission prevented
+    Done by: UTORID 
+    Explanation: 
+
+05) Insecure direct object references prevented, don't need object id's on the page
+    Done by: UTORID 
+    Explanation: 
+
+08) Summary screen presents some notion of velocity for each restaurant, for example
+   velocity over the past few ratings, velocity over the past few minutes.
+   Users see which restaurants are moving in the ratings fastest.
+    Done by: UTORID 
+    Explanation: 
+
+09) Summary screen automatically updates every once in a while.
+    Done by: UTORID 
+    Explanation: 
+
+12) Invalid form submission triggers page reload with form still filled in
+    as well as good error messages.
+    Done by: UTORID 
+    Explanation: 
+
+13) All user inputs whitelisted on the backend, whether checked on the front
+    or not.
+    Done by: UTORID 
+    Explanation: 
+
+15) User profile can be visited for the first time (on registration),
+    on error, and on update in which case it is pre-loaded with
+    appropriate fields.
+    Done by: UTORID
+    Explanation: 
+
+19) Require user to answer 10 (for example) before they can see results
+    Done by: UTORID 
+    Explanation: 
+
+
+23) Good use of transactions as appropriate. Note: You can put a begin/commit block in a try/catch to simplify transaction exception handling. 
+    Done by: UTORID 
+    Explanation: 
+
+Add more user stories below... move them up when done
+
+
+27) Description: 
+    Done by: UTORID 
+    Explanation: 
+
+28) Description: 
+    Done by: UTORID 
+    Explanation: 
+
+29) Description: 
+    Done by: UTORID 
+    Explanation: 
+
+30) Description: 
+    Done by: UTORID 
+    Explanation: 
+
+31) Description: 
+    Done by: UTORID 
+    Explanation: 
+
